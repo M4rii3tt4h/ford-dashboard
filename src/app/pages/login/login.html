@@ -1,0 +1,40 @@
+<div class="login-page">
+
+  <div class="left-panel">
+    <img src="/img/RANGER.png" alt="Ford Mustang" class="car-image">
+  </div>
+
+  <div class="right-panel">
+
+    <div class="login-card">
+
+      <img src="/img/ford.png" alt="Ford" class="logo">
+      <h2>Boas-vindas</h2>
+
+      <input
+        type="text"
+        placeholder="Insira seu e-mail"
+        [(ngModel)]="usuario">
+
+      <input
+        type="password"
+        placeholder="Insira sua senha"
+        [(ngModel)]="senha">
+
+      <button (click)="entrar()">
+        Entrar
+      </button>
+
+      @if(mensagem){
+
+      <p class="erro">
+        {{mensagem}}
+      </p>
+
+      }
+
+    </div>
+
+  </div>
+
+</div>

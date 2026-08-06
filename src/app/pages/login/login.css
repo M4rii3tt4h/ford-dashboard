@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.login-page{
+
+    width:100%;
+    min-height:100vh;
+    display:flex;
+}
+
+.left-panel{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.car-image{
+    width:90%;
+    max-width:720px;
+    filter:drop-shadow(0 15px 25px rgba(0,0,0,.35));
+    opacity: 0.7;
+}
+
+.right-panel{
+    width:430px;
+    background:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+
+.login-card{
+    width:100%;
+}
+
+.logo{
+    display:block;
+    width:170px;
+    margin:auto;
+    margin-bottom:20px;
+}
+
+h2{
+    text-align:center;
+    color:#145dbc;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#777;
+    margin-bottom:30px;
+}
+
+input{
+
+    width:100%;
+    padding:15px;
+    margin-bottom:18px;
+    border-radius:8px;
+    border:1px solid #d5d5d5;
+    font-size:16px;
+    transition:.3s;
+}
+
+input:focus{
+    outline:none;
+    border-color:#060606;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    background:#82978c;
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#145dbc;
+
+}
+
+.erro{
+
+    margin-top:15px;
+
+    color:#d60000;
+
+    text-align:center;
+
+}
+
+@media(max-width:900px){
+
+.login-page{
+
+flex-direction:column;
+
+}
+
+.left-panel{
+
+height:40vh;
+
+}
+
+.right-panel{
+
+width:100%;
+
+}
+
+.logo{
+
+width:140px;
+
+}
+
+}
