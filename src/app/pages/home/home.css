@@ -27,6 +27,31 @@ header{
 
 }
 
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-right: 20px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:24px;
+    margin-right: 40px;
+}
+
+nav a{
+    color:#223ebb;
+    font-family: 'poppins', sans-serif;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+nav a:hover{
+    color:#525255;
+}
+
 .logo{
     display:block;
     width:100px;
@@ -45,29 +70,28 @@ header h2{
 header button{
 
     
-
-    color:#666666;
-
-    border:none;
-
-    padding:12px 22px;
-
-    border-radius:10px;
-
+    background:#fff;
+    color:#223ebb;
+    border:solid 1px #d6d7da;
+    padding:7px 22px;
+    border-radius:8px;
     cursor:pointer;
-
     font-weight:bold;
+
+}
+
+header button:hover{
+
+    background:#223ebb;
+    color:#fff;
 
 }
 
 main{
 
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
     padding:60px 20px;
 
 }
@@ -77,27 +101,31 @@ main{
     width:100%;
     max-width:450px;
     height:480px;
+    border:solid 1px #a6a9b1;
     background: rgba(255, 255, 255, 0.8);
-    padding:50px;
-    border-radius:20px;
-    text-align:center;
+    border-radius:11px;
+    text-align:left;
     box-shadow:0 15px 35px rgba(0,0,0,.25);
 
 }
 
 .card h1{
 
-    font-size:30px;
-    color:#0c2d59;
-    font-weight:medium;
-    margin-bottom:20px;
-
+    font-family: 'poppins', sans-serif;
+    width:450px;
+    font-size:22px;
+    color:#1536c5;
+    padding-top:6px;
+    padding-left: 17px;
+    padding-bottom:6px;
+    border-bottom:solid 1px #a6a9b1;
+    font-weight:400;
 }
 
 .card p{
 
     margin-top:10px;
-
+    padding-left:17px;
     font-size:18px;
 
     color:#555;
