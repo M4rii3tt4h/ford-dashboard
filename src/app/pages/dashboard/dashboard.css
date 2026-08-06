@@ -1,0 +1,64 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+main{
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.card{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.card h1{
+
+    font-family: 'poppins', sans-serif;
+    font-size:22px;
+    color:#1536c5;
+    font-weight:400;
+    margin-top:20px;
+}
+
+.card img{
+    width: 400px;
+    height: auto;
+}
+
+
+
+@media(max-width:768px){
+
+header{
+
+padding:20px;
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+.card{
+
+padding:30px;
+
+}
+
+.card h1{
+
+font-size:30px;
+
+}
+
+}
