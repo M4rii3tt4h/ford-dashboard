@@ -1,64 +1,251 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+}
+
+.dashboard {
+
+    min-height:100vh;
+
+    background:#f2f2f2;
+
+}
+
+
+
+header{
+
+    width:100%;
+
+    color:white;
+
+    padding:18px 40px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+
+nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-right:20px;
+
+}
+
+
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:24px;
+
+    margin-right:40px;
+
+}
+
+
+
+nav a{
+
+    color:#223ebb;
+
+    font-family:'poppins', sans-serif;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+}
+
+
+
+nav a:hover{
+
+    color:#525255;
+
+}
+
+
+
+.logo{
+
+    display:block;
+
+    width:100px;
+
+    margin:auto;
+
+    margin-left:20px;
+
+}
+
+
+
+header h2{
+
+    font-size:28px;
+
+}
+
+
+
+header button{
+
+
+    background:#fff;
+
+    color:#223ebb;
+
+    border:solid 1px #d6d7da;
+
+    padding:7px 22px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+
+}
+
+
+
+header button:hover{
+
+
+    background:#223ebb;
+
+    color:#fff;
+
+
+}
+
 
 
 main{
 
     display:flex;
-    flex-direction:column;
+
     justify-content:center;
-    align-items:center;
+
+    padding:40px;
 
 }
 
+
+
 .card{
+
+    background:white;
+
+    width:600px;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+
+}
+
+
+
+.search{
+
     display:flex;
-    flex-direction:column;
+
     justify-content:center;
-    align-items:center;
-}
 
-.card h1{
-
-    font-family: 'poppins', sans-serif;
-    font-size:22px;
-    color:#1536c5;
-    font-weight:400;
-    margin-top:20px;
-}
-
-.card img{
-    width: 400px;
-    height: auto;
-}
-
-
-
-@media(max-width:768px){
-
-header{
-
-padding:20px;
-
-flex-direction:column;
-
-gap:15px;
+    gap:10px;
 
 }
 
-.card{
 
-padding:30px;
+
+input{
+
+    width:60%;
+
+    padding:12px;
+
+    border-radius:8px;
+
+    border:1px solid #ccc;
+
+    font-size:16px;
 
 }
 
-.card h1{
 
-font-size:30px;
+
+.search button{
+
+    padding:12px 20px;
+
+    border-radius:8px;
+
+    border:none;
+
+    background:#223ebb;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-weight:bold;
 
 }
+
+
+
+.search button:hover{
+
+    background:#525255;
+
+}
+
+
+
+.vehicle-result{
+
+    margin-top:40px;
+
+}
+
+
+
+.vehicle-result img{
+
+    width:350px;
+
+    max-width:100%;
+
+}
+
+
+
+.vehicle-result h2{
+
+    font-size:30px;
 
 }

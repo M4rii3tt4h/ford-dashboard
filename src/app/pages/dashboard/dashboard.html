@@ -1,15 +1,108 @@
 <div class="dashboard">
 
+
+    <header>
+
+         <img src="/img/ford.png" alt="Ford" class="logo">
+
+         <nav>
+            <ul>
+                <li><a routerLink="/home">Home</a></li>
+            </ul>
+
+            <ul>
+                <li>
+                    <a routerLink="/dashboard">Dashboard</a>
+                </li>
+            </ul>
+        </nav>
+
+        <button (click)="logout()">
+            Logout
+        </button>
+
+    </header>
+
+
+
     <main>
 
         <div class="card">
 
-            <img src="/img/ford.png" alt="Ford Logo" class="logo">
 
-            <h1>Dashboard em construção...</h1>
+            <h1>
+                Dashboard Ford
+            </h1>
+
+
+            <h2>
+                Buscar veículo
+            </h2>
+
+
+
+            <div class="search">
+
+
+                <input
+
+                    type="text"
+
+                    placeholder="Digite o modelo do veículo"
+
+                    [(ngModel)]="search"
+
+                >
+
+
+
+                <button (click)="searchVehicle()">
+
+                    Pesquisar
+
+                </button>
+
+
+            </div>
+
+
+
+
+            <div
+
+                class="vehicle-result"
+
+                *ngIf="selectedVehicle as vehicle"
+
+            >
+
+
+                <img
+
+                    [src]="vehicle.img"
+
+                    [alt]="vehicle.vehicle"
+
+                >
+
+
+
+                <h2>
+
+                    {{ vehicle.vehicle }}
+
+                </h2>
+
+
+
+            </div>
+
+
 
         </div>
 
+
     </main>
+
 
 </div>
